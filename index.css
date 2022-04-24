@@ -1,0 +1,264 @@
+.kg {
+    /* ### Primary */
+    /* - Dark Blue (intro and email sign up background):  */
+    color: hsl(217, 28%, 15%);
+    /* - Dark Blue (main background):  */
+    color: hsl(218, 28%, 13%);
+    /* - Dark Blue (footer background):  */
+    color: hsl(216, 53%, 9%);
+    /* - Dark Blue (testimonials background):  */
+    color: hsl(219, 30%, 18%);
+    /* ### Accent */
+    /* - Cyan (inside call-to-action gradient):  */
+    color: hsl(176, 68%, 64%);
+    /* - Blue (inside call-to-action gradient):  */
+    color: hsl(198, 60%, 50%);
+    /* - Light Red (error):  */
+    color: hsl(0, 100%, 63%);
+    /* ### Neutral */
+    /* - White:  */
+    color: hsl(0, 0%, 100%)
+    /* ## Typography
+    ### Body Copy
+    - Font size: 14px */
+}
+
+body {
+    background-color: hsl(218, 28%, 13%);
+    color: hsl(0, 0%, 100%);
+    font: 1.4rem;
+}
+
+.navigation__list {
+    position: absolute;
+    text-align: center;
+    right: .5rem;
+    top: .5rem;
+}
+
+@media only screen and (min-width: 50rem) {
+    .navigation__button {
+        width: 0;
+        opacity: 0;
+    }
+    .navigation__background {
+        width: 0;
+        opacity: 0;
+    }
+}
+
+.navigation__item {
+    margin: .5rem;
+    display: inline;
+}
+
+.navigation__link,
+.navigation__link:link,
+.navigation__link:visited {
+    display: inline;
+    font-size: 1rem;
+    font-weight: 300;
+    padding: 1rem;
+    text-decoration: none;
+    font-family: 'Barlow', sans-serif;
+    background-size: 220%;
+}
+
+.navigation__link:hover,
+.navigation__link:active {
+    background-position: 100%;
+    color: #000;
+    border-radius: 1rem;
+}
+
+.header {
+    text-align: color;
+    margin: 0 auto;
+}
+
+.header__img,
+.header__heading,
+.header__paragraph,
+.header-btn {
+    position: relative;
+    width: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -5%);
+}
+
+.btn {
+    background-color: hsl(176, 68%, 64%);
+    border-radius: 1rem;
+    border: none;
+    padding: .5rem;
+    color: hsl(0, 0%, 100%);
+    width: 25%;
+}
+
+.our__service {
+    display: grid;
+    grid-template-areas: '. col-1 col-2 .' '. col-3 col-4 .';
+    margin: 8rem;
+    text-align: center;
+    grid-gap: 2rem;
+}
+
+.col-1 {
+    grid-area: col-1;
+}
+
+.col-2 {
+    grid-area: col-2;
+}
+
+.col-3 {
+    grid-area: col-3;
+}
+
+.col-4 {
+    grid-area: col-4;
+}
+
+.stay__productive-img {
+    width: 50%;
+}
+
+.stay__productive-colloctions {
+    margin-left: 2rem;
+}
+
+.stay__productive-btn {
+    background-color: hsl(218, 28%, 13%);
+    border: none;
+    color: white;
+}
+
+.stay__productive-arrow {
+    position: relative;
+    margin-left: .25rem;
+    top: .2rem;
+}
+
+.stay__productive {
+    display: flex;
+    margin: 5rem;
+}
+
+.clients-testimonials {
+    display: flex;
+    text-align: center;
+    padding-bottom: 1rem;
+    position: relative;
+}
+
+.client__satish,
+.client__bruce,
+.client__iva {
+    width: 33.3333%;
+    padding: 1rem;
+    background-color: hsl(219, 30%, 18%);
+    margin: .5rem;
+    position: relative;
+}
+
+@media only screen and (max-width: 50rem) {
+    .clients-testimonials {
+        flex-direction: column;
+    }
+    .client__satish,
+    .client__bruce,
+    .client__iva {
+        width: 100%;
+        height: auto;
+    }
+}
+
+.client__paragraph {
+    padding-left: 2rem;
+    width: 70%;
+    color: white;
+    padding-bottom: 0rem;
+}
+
+.client__img {
+    position: absolute;
+    border-radius: 50%;
+    width: 20%;
+    top: 10rem;
+    left: 1rem;
+}
+
+.client__name {
+    font-family: 'Fraunces', sans-serif;
+    font-weight: bold;
+    margin-bottom: .25rem;
+    display: block;
+    margin-left: -4rem;
+}
+
+.client__name-position {
+    text-align: center;
+    margin-left: 4rem;
+}
+
+.early__access {
+    background-color: hsl(217, 28%, 15%);
+    position: relative;
+    width: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -5%);
+    padding: 2rem;
+}
+
+.early__access-btn {
+    width: 40%;
+}
+
+.footer {
+    background-color: hsl(216, 53%, 9%);
+    padding: 5rem 0rem 1rem 1rem;
+    display: flex;
+    height: 10rem;
+}
+
+.para__logo {
+    width: 50%;
+}
+
+.footer-paragraph {
+    width: 80%;
+    font-size: 1rem;
+}
+
+.footer__logo {
+    width: 30%;
+}
+
+.contact {
+    /* width: 20%; */
+    /* margin-left: -10rem; */
+    font-size: 1.4rem;
+}
+
+.contact img {
+    width: 10%;
+}
+
+.navigation_list {
+    list-style: none;
+    width: 20%;
+    font-size: 1rem;
+}
+
+.navigation_list a {
+    text-decoration: none;
+    color: white;
+    margin: 1rem;
+}
+
+.icons {
+    width: 20%;
+    font-size: 1.4rem;
+}
