@@ -29,11 +29,16 @@ body {
     font: 1.4rem;
 }
 
+.navigation__nav {
+    color: hsl(0, 0%, 100%);
+}
+
 .navigation__list {
     position: absolute;
     text-align: center;
     right: .5rem;
     top: .5rem;
+    color: hsl(0, 0%, 100%);
 }
 
 @media only screen and (min-width: 50rem) {
@@ -50,6 +55,7 @@ body {
 .navigation__item {
     margin: .5rem;
     display: inline;
+    color: hsl(0, 0%, 100%);
 }
 
 .navigation__link,
@@ -62,12 +68,13 @@ body {
     text-decoration: none;
     font-family: 'Barlow', sans-serif;
     background-size: 220%;
+    color: hsl(0, 0%, 100%);
 }
 
 .navigation__link:hover,
 .navigation__link:active {
     background-position: 100%;
-    color: #000;
+    color: hsl(0, 0%, 100%);
     border-radius: 1rem;
 }
 
